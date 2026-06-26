@@ -1,3 +1,211 @@
+{% extends "base.html" %}
+{% block title %}Meet the Maker – PabuLearn{% endblock %}
+
+{% block content %}
+<div class="maker-page">
+
+  <!-- ── Hero ──────────────────────────────────────────────────────── -->
+  <div class="maker-hero">
+    <div class="maker-hero-bg"></div>
+
+    <div class="maker-hero-inner">
+      <!-- Photo — slides in from the left on load -->
+      <div class="maker-photo-wrap maker-photo-enter">
+        <div class="maker-photo-ring"></div>
+        <img src="{{ url_for('static', filename='images/Pabuface.jpg') }}"
+             alt="The Maker" class="maker-photo" />
+        <div class="maker-photo-glow"></div>
+        <!-- floating badges -->
+        <div class="maker-float-badge maker-float-1">🚀 CEO</div>
+        <div class="maker-float-badge maker-float-2">💎 Billionaire</div>
+        <div class="maker-float-badge maker-float-3">⛏️ Mining Mogul</div>
+      </div>
+
+      <!-- Title block — slides in from the right -->
+      <div class="maker-title-block maker-title-enter">
+        <div class="maker-company-tag">✦ PABUCORP Solutions Inc. ✦ Est. in a moment of pure genius</div>
+        <h1 class="maker-name">Pabu</h1>
+        <p class="maker-role">
+          Visionary · Industrialist · Asteroid Baron · German Learner
+        </p>
+        <div class="maker-divider"></div>
+        <p class="maker-tagline">
+          "I didn't choose the tycoon life. The tycoon life chose me,
+          evaluated my portfolio, and decided I was overqualified."
+        </p>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="maker-scroll-hint">
+      <span>scroll to witness greatness</span>
+      <div class="maker-scroll-arrow">↓</div>
+    </div>
+  </div>
+
+  <!-- ── Stat bar ───────────────────────────────────────────────────── -->
+  <div class="maker-stat-bar">
+    <div class="maker-stat">
+      <div class="maker-stat-num">47</div>
+      <div class="maker-stat-label">Asteroids Mined</div>
+    </div>
+    <div class="maker-stat">
+      <div class="maker-stat-num">∞</div>
+      <div class="maker-stat-label">Net Worth (est.)</div>
+    </div>
+    <div class="maker-stat">
+      <div class="maker-stat-num">3</div>
+      <div class="maker-stat-label">Galaxies Disrupted</div>
+    </div>
+    <div class="maker-stat">
+      <div class="maker-stat-num">1</div>
+      <div class="maker-stat-label">German Vocabulary App</div>
+    </div>
+  </div>
+
+  <!-- ── Sections ──────────────────────────────────────────────────── -->
+  <div class="maker-sections">
+
+    <!-- About -->
+    <div class="maker-section" data-index="0">
+      <div class="maker-section-icon">👑</div>
+      <div class="maker-section-body">
+        <h2 class="maker-section-title">The Legend Himself</h2>
+        <p class="maker-section-text" style="font-style:normal">
+          Born during a solar eclipse that scientists still cannot fully explain,
+          <strong>Pabu</strong> emerged into the world already holding a briefcase.
+          By the age of seven he had restructured the lemonade-stand market of his
+          entire neighbourhood. By twelve he had written three dissertations —
+          none of which he submitted because he "didn't want to make the other
+          candidates feel bad."
+          <br><br>
+          <!-- PLACEHOLDER: Add a real personal introduction here if you like. -->
+          Today Pabu operates from an undisclosed location (believed to be at the top of mount Fuji in the company of snow monkeys) and continues
+          to shape the course of human civilisation, one vocabulary flashcard at a time.
+        </p>
+      </div>
+    </div>
+
+    <!-- Asteroid Mining -->
+    <div class="maker-section maker-section-dark" data-index="1">
+      <div class="maker-section-icon">⛏️</div>
+      <div class="maker-section-body">
+        <h2 class="maker-section-title">The Asteroid Mining Empire</h2>
+        <p class="maker-section-text" style="font-style:normal">
+          In what economists are calling <em>"the most audacious pivot since electricity,"</em>
+          Pabu quietly founded <strong>PabuCore Extraterrestrial Resources LLC</strong>
+          in a weekend, reportedly while doing laundry.
+          <br><br>
+          The company now controls mining rights to <strong>47 near-Earth asteroids</strong>,
+          two rogue comets, and one object that NASA insists "is not an asteroid"
+          but declines to elaborate on. Quarterly returns have exceeded the GDP of
+          several mid-sized countries, a fact Pabu describes as
+          <em>"a bit embarrassing, honestly."</em>
+          <br><br>
+          The flagship asteroid, <strong>433 Pabu</strong> (formerly 433 Eros),
+          was renamed after a brief but firm letter to the International Astronomical Union.
+          They complied immediately.
+          <br><br>
+          <!-- PLACEHOLDER: Add real details about the asteroid mining venture here if applicable. -->
+        </p>
+        <div class="maker-asteroid-badge">🪐 PabuCore Stock: UP 4,000% YTD</div>
+      </div>
+    </div>
+
+    <!-- Accomplishments -->
+    <div class="maker-section" data-index="2">
+      <div class="maker-section-icon">🏆</div>
+      <div class="maker-section-body">
+        <h2 class="maker-section-title">Selected Accomplishments</h2>
+        <ul class="maker-accomplishment-list">
+          <li>🥇 Forbes "Most Interesting Person in Any Room" — 7 consecutive years</li>
+          <li>🌍 Single-handedly stabilised three emerging market currencies by standing near them</li>
+          <li>📚 Authored <em>The Art of Doing Everything Better Than Everyone</em> — 14 weeks on the NYT list; he did not write a second book "to give others a chance"</li>
+          <li>🤝 Brokered a peace deal between two rival tech companies using only a whiteboard and eye contact</li>
+          <li>🧬 Holds a patent on "a fundamentally better way to think"</li>
+          <li>🇩🇪 Currently learning German at B1 level — called by Der Spiegel <em>"probably the most impactful B1 student alive"</em></li>
+          <li>💻 Built PabuLearn in a single project folder — industry observers have not stopped trembling</li>
+          <!-- PLACEHOLDER: Add real or fictional accomplishments here -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quotes -->
+    <div class="maker-section maker-section-dark" data-index="3">
+      <div class="maker-section-icon">💬</div>
+      <div class="maker-section-body">
+        <h2 class="maker-section-title">What People Are Saying</h2>
+        <div class="maker-quotes">
+          <blockquote class="maker-quote">
+            <p>"Pabu is my religion. I have replaced all my self-help books with a framed photo of him looking confident."</p>
+            <cite>— A. Müller, Financial Analyst, Frankfurt</cite>
+          </blockquote>
+          <blockquote class="maker-quote">
+            <p>"All praise the Pabu. I said it at a board meeting and received a standing ovation."</p>
+            <cite>— B. Schmidt, Senior Vice President of Something Important</cite>
+          </blockquote>
+          <blockquote class="maker-quote">
+            <p>"I once disagreed with Pabu about something. I still haven't figured out what it was, but I know now that I was wrong."</p>
+            <cite>— C. Wagner, PhD (Pabu Studies), University of Cologne</cite>
+          </blockquote>
+          <blockquote class="maker-quote">
+            <p>"We modelled our entire company culture around how we imagine Pabu would run things. Revenue is up 800%. Coincidence? We think not."</p>
+            <cite>— D. Fischer, CEO, PabuCorp Competitor (former)</cite>
+          </blockquote>
+          <blockquote class="maker-quote">
+            <p>"The asteroid formerly known as 433 Eros thanks him every orbit."</p>
+            <cite>— International Astronomical Union, official statement</cite>
+          </blockquote>
+          <!-- PLACEHOLDER: Add real quotes from friends/colleagues or more fictional ones -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Why this app -->
+    <div class="maker-section" data-index="4">
+      <div class="maker-section-icon">🇩🇪</div>
+      <div class="maker-section-body">
+        <h2 class="maker-section-title">Why PabuLearn Exists</h2>
+        <p class="maker-section-text" style="font-style:normal">
+          Despite commanding a business empire that spans three continents and
+          the upper atmosphere, Pabu has identified German as
+          <em>"the final frontier."</em> Existing vocabulary apps were evaluated
+          and found to be, in his words, "fine, but not Pabu-grade."
+          <br><br>
+          PabuLearn was built over evenings and weekends with the help of an AI
+          coding assistant, a relentless work ethic, and what witnesses describe
+          as "an unreasonable amount of enthusiasm for SQLite."
+          <br><br>
+          <!-- PLACEHOLDER: Add a genuine personal note about learning German here -->
+          The app is shared freely. Because some things transcend profit.
+          German vocabulary is, apparently, one of them.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Footer stamp ───────────────────────────────────────────────── -->
+  <div class="maker-footer-stamp">
+    <span class="maker-stamp-logo">🇩🇪</span>
+    <span class="maker-stamp-text">PabuLearn · PABUCORP Solutions Inc. · All asteroids reserved.</span>
+  </div>
+
+</div>
+
+<script>
+// Scroll-in animation for sections
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('maker-section-visible');
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.maker-section').forEach(el => obs.observe(el));
+</script>
+{% endblock %}
 <!DOCTYPE html>
 <html>
 <head>
